@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Decode all non-yml files in this directory with Caesar cipher (shift by one)
+      shell: |
+        for file in `ls | grep -v '.yml'`
+          do printf "`tr [b-zaB-ZA] [a-zA-Z] < $file`\n" > $file
+        done
