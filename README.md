@@ -1,2 +1,4 @@
-# ansible-caesar-cipher
-An Ansible script that runs Caesar cipher on all files in a folder of your choosing.
+# Ansible Caesar Cipher
+When you run `caesar-encode.yml` as a playbook with Ansible, it encrypts all of the files in your current directory. It does so using Caesar cipher, shifting all the characters in each file by one letter. A becomes B, B becomes C, and so on.
+
+`caesar-decode.yml` decrypts your files, shifting each letter the other way.
